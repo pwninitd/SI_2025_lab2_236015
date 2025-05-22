@@ -1,5 +1,3 @@
-package mk.ukim.finki;
-
 import java.util.List;
 
 class Item {
