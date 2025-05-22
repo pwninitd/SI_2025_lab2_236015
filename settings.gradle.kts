@@ -1,0 +1,2 @@
+rootProject.name = "SI_2025_lab2_236015"
+
