@@ -14,18 +14,27 @@
 ### Тест случаи според критериумот  Every statement
 
 Треба да има минимално 5 тест случаи за да се постигне критериумот Every Statement
+
 Test 1: allItems=null, cardNumber="" - 1, 2, 26
+
 Test 2: allItems=[{name="",quantitiy=1,price=1,discount=0.7}], cardNumber="" - 1, 3, 4.1, 4.2, 5, 6, 7, 26
+
 Test 3: allItems=[{name="Klima",quantitiy=1,price=1,discount=0.7}], cardNumber="1a34567891234567" - 1, 3, 4.1, (4.2, 5, 6, 8, 9, 10, 11, 4.3), 14, 15, 16, 17, 18.1, 18.2, 19, 20, 18.3, 19, 20, 21, 26
+
 Test 4: allItems=[{name="Klima",quantitiy=1,price=1,discount=0}], cardNumber=null - 1, 3, 4.1, (4.2, 5, 6, 8, 10, 12, 13, 4.3), 14, 15, 23, 24, 26
+
 Test 5: allItems=[{name="Klima",quantitiy=1,price=1,discount=0}], cardNumber="1234567891234567" -  1, 3, 4.1, (4.2, 5, 6, 8, 10, 12, 13, 4.3), 14, 15, 16, 17, 18.1, (18.2, 19, 20, 18.3) 22, 25
 
 ### Тест случаи според критериумот Multiple Condition 
 
 Треба да има минимално 4 тест случаи за да се постигне критериумот Multiple Condition. `if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)` со помош на Lazy Evaluation TXX, FTX, FFT, FFF
+
 Test 1: allItems=[{name="Klima",quantitiy=1,price=301,discount=0.7}], cardNumber="1234567891234567" - TXX
+
 Test 2: allItems=[{name="Klima",quantitiy=1,price=0,discount=0.7}], cardNumber="1234567891234567" - FTX
+
 Test 3: allItems=[{name="Klima",quantitiy=11,price=0,discount=0}], cardNumber="1234567891234567" - FFT
+
 Test 4: allItems=[{name="Klima",quantitiy=0,price=0,discount=0}], cardNumber="1234567891234567" - FFF
 
 ### Објаснување на напишаните unit tests
